@@ -3,7 +3,7 @@
 module.exports = function runSymbolTests(t) {
 	t.equal(typeof Symbol, 'function', 'global Symbol is a function');
 
-	if (typeof Symbol !== 'function') { return false };
+	if (typeof Symbol !== 'function') { return false; }
 
 	t.notEqual(Symbol(), Symbol(), 'two symbols are not equal');
 
